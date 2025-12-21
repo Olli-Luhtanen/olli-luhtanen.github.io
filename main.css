@@ -1,0 +1,48 @@
+.navbar {
+  background-color: #0f172a;
+}
+.nav-logo{
+    color: #f8fafc;
+    text-align: left;
+
+}
+.nav-links{
+    text-align: right;
+}
+.navbar a {
+  color: #f8fafc;
+}
+.navbar a:hover {
+  color: #3DADFF; 
+}
+.social-links a{
+  color: #0f172a;
+}
+.social-links a:hover {
+  color: #3DADFF; 
+}
+
+.hero img {
+  width: 200px;
+  height: 350px;
+  object-fit: cover;
+}
+.footer{
+    background-color: #0f172a;
+}
+.footer-links{
+    text-align: left;
+    list-style-type: none;
+    text-align: left;
+    
+}
+.footer a {
+  color: #f8fafc;
+}
+.footer a:hover {
+  color: #3DADFF; 
+}
+.copy{
+    color: #f8fafc;
+    text-align: center;
+}
