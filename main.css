@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
 }
 
+/* Navbar start*/
 .navbar {
     width: 100%;
     background-color: #0f172a;
@@ -42,19 +42,49 @@ body {
 .navbar a:hover {
   color: #3DADFF; 
 }
+/* Navbar end*/
 
+/* Socials start*/
 .social-links a{
   color: #0f172a;
 }
 .social-links a:hover {
   color: #3DADFF; 
 }
+/* Socials end*/
 
+/* Hero start*/
+.hero{
+  width: 100%;
+  background-color: #3DADFF;
+  top: 0;
+  overflow: hidden;
+}
+.hero-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: larger;
+  padding: 1.5rem;
+}
+.hero-content{
+  padding: 1,5rem;
+}
 .hero img {
   width: 200px;
   height: 350px;
   object-fit: cover;
+  display: flex;
 }
+/* Hero end*/
+
+/* Highlight start*/
+/* Highlight end*/
+
+/* Contact start*/
+/* Contact end*/
+
+/* Footer start*/
 .footer{
     background-color: #0f172a;
 }
@@ -70,3 +100,4 @@ body {
 .copy{
     color: #f8fafc;
 }
+/* Footer end*/
