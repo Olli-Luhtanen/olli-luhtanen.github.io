@@ -22,12 +22,12 @@ body {
 }
 .logo{
     color: #f8fafc;
-    font-weight:bold;
     font-size: larger;
+    padding-left: 2%;
 }
 .nav-links{
     display: flex;
-    gap: 0.7rem;
+    gap: 0.8rem;
     list-style: none;
     margin-left: auto;
 }
