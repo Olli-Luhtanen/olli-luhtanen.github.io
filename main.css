@@ -3,12 +3,14 @@
 }
 body {
   margin: 0;
+  background-color: #efefef;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Navbar start*/
 .navbar {
     width: 100%;
-    background-color: #0f172a;
+    background-color: black;
     position: sticky;
     top: 0;
     overflow: hidden;
@@ -21,7 +23,7 @@ body {
     padding: 0.5rem;
 }
 .logo{
-    color: #f8fafc;
+    color: #f6f6f6;
     font-size: larger;
     padding-left: 2%;
 }
@@ -32,7 +34,7 @@ body {
     margin-left: auto;
 }
 .navbar a {
-  color: #f8fafc;
+  color: #f6f6f6;
   display: flex;
   align-items: center;
   gap: 0.4rem;
@@ -44,19 +46,10 @@ body {
 }
 /* Navbar end*/
 
-/* Socials start*/
-.social-links a{
-  color: #0f172a;
-}
-.social-links a:hover {
-  color: #3DADFF; 
-}
-/* Socials end*/
-
 /* Hero start*/
 .hero{
   width: 100%;
-  background-color: #3DADFF;
+  background-color: #1d1d1d;
   top: 0;
   overflow: hidden;
 }
@@ -68,17 +61,39 @@ body {
   padding: 1.5rem;
 }
 .hero-content{
-  padding: 1,5rem;
-}
-.hero img {
-  width: 200px;
-  height: 350px;
-  object-fit: cover;
-  display: flex;
+  padding: 1.5rem;
+  color: white;
 }
 /* Hero end*/
 
 /* Highlight start*/
+.highlight{
+  width: 100%;
+  background-color: #1d1d1d;
+  top: 0;
+  overflow: hidden;
+}
+.project-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1.5rem;
+}
+.project-card{
+  background-color: #0f172a;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+.project-card button{
+  background-color: #3DADFF;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
 /* Highlight end*/
 
 /* Contact start*/
@@ -98,6 +113,6 @@ body {
   color: #3DADFF; 
 }
 .copy{
-    color: #f8fafc;
+  color: #f8fafc;
 }
 /* Footer end*/
