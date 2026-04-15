@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/9f3223db55.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" />
@@ -15,6 +16,7 @@
             <div class="nav-links">
                 <a href="/index.html">Home</a>
                 <a href="/projects.html">Projects</a>
+                <a href="/blog.html">Blog</a>
                 <a href="/contact.html">Contact</a>
                 </a>
             </div>
@@ -27,7 +29,8 @@
                 <h2>| IT Engineering Student | Game Developer |</h2>
                 <p>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat.
+                    Ut laboris nisi ut minim  veniam, quis laboris nisi ut ex ea  commodo consequat  commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut laboris nisi ut quis nostrud exercitation ullamco laboris nisi ut .
                 </p>
                 <p>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor”
@@ -37,68 +40,70 @@
     </header>
 
     <section id="highlight" class="highlight">
+        <h2 class="section-header">Featured Projects</h2>
         <div class="project-grid">
-            <div class="project-card">
+            <a href="/projects/project-1" class="project-card">
                 <h3>Project 1</h3>
-                <img src="" alt="">
-                <p>Description of Project 1</p>
-                <button onclick="location.href='projects.html/#project1'">Learn More</button>
-            </div>
-            <div class="project-card">
+                <img src="https://placehold.co/250x250" alt="Project 1 Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </a>
+            <a href="/projects/project-2" class="project-card">
                 <h3>Project 2</h3>
-                <img src="" alt="">
-                <p>Description of Project 2</p>
-                <button onclick="location.href='projects.html/#project2'">Learn More</button>
-            </div>
-            <div class="project-card">
+                <img src="https://placehold.co/250x250" alt="Project 1 Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </a>
+            <a href="/projects/project-3" class="project-card">
                 <h3>Project 3</h3>
-                <img src="" alt="">
-                <p>Description of Project 3</p>
-                <button onclick="location.href='projects.html/#project3'">Learn More</button>
-            </div>
+                <img src="https://placehold.co/250x250" alt="Project 1 Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </a>
         </div>
     </section>
-
-    <section id="contact" class="section contact">
-        <h2>Send me a message!</h2>
-
-        <form class="contact-form" action="#" method="post">
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="first_name" required />
-                </div>
-                <div class="form-group">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last_name" required />
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required />
-            </div>
-
-            <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" required />
-            </div>
-
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-
-            <button type="submit" class="btn-submit">Submit</button>
-        </form>
-    </section>
-     <!-- privasy?, link to contact form, navication,  -->
+    
     <footer class="footer">
+        <div class="footer-container">
+
+            <div class="intro">
+                <a href="index.html" class ="footer-brand">
+                    Olli Luhtanen
+                </a>
+                <p>Software Engineer & Game Developer</p>
+
+                <div class ="social-icons">
+                    <a href="https://linkedin.com/in/olliluhtanen" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/olliluhtanen" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="navigation">
+                <p class="footer-heading">Navigation</p>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="get-in-touch">
+                <p class="footer-heading">Get in touch</p>
+                <a href="https://linkedin.com/in/olliluhtanen" target="_blank">LinkedIn</a>
+                <a href="https://github.com/olliluhtanen" target="_blank">GitHub</a>
+            </div>
+
+        </div>
+
         <div class="copy">
-            <small>
+            <p>
                 &copy; <script>document.write(new Date().getFullYear())</script> 
                 Olli Luhtanen. All rights reserved.
-            </small>
+            </p>
         </div>
     </footer>
 </body>

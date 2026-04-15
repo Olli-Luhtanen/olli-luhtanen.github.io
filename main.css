@@ -4,7 +4,12 @@
 body {
   margin: 0;
   background-color: #efefef;
-  font-family: 'Times New Roman', Times, serif;
+}
+.section-header {
+  color: #0f172a;
+  font-size: xxx-large;
+  margin: 1.5rem;
+  text-align: center;
 }
 
 /* Navbar start*/
@@ -20,12 +25,12 @@ body {
     align-items: center;
     justify-content: space-between;
     font-size: larger;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 .logo{
     color: #f6f6f6;
-    font-size: larger;
-    padding-left: 2%;
+    font-size: xx-large;
+    padding-left: 1rem;
 }
 .nav-links{
     display: flex;
@@ -38,7 +43,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  font-size:larger;
+  font-size:xx-large;
   text-decoration: none;
 }
 .navbar a:hover {
@@ -49,7 +54,6 @@ body {
 /* Hero start*/
 .hero{
   width: 100%;
-  background-color: #1d1d1d;
   top: 0;
   overflow: hidden;
 }
@@ -62,14 +66,13 @@ body {
 }
 .hero-content{
   padding: 1.5rem;
-  color: white;
+  font-size: larger;
 }
 /* Hero end*/
 
 /* Highlight start*/
 .highlight{
   width: 100%;
-  background-color: #1d1d1d;
   top: 0;
   overflow: hidden;
 }
@@ -81,38 +84,137 @@ body {
 }
 .project-card{
   background-color: #0f172a;
+  text-decoration: none;
   color: white;
   padding: 1rem;
   border-radius: 8px;
   text-align: center;
+  font-size: larger;
+}
+.project-card img{
+  width: 90%;
+  height: auto;
+  border-radius: 6px;
 }
 .project-card button{
-  background-color: #3DADFF;
-  color: white;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
+  font-size: x-large;
+}
+.project-card button:hover{
+  background-color: #3DADFF;
 }
 /* Highlight end*/
 
-/* Contact start*/
-/* Contact end*/
-
 /* Footer start*/
-.footer{
+.footer {
     background-color: #0f172a;
+    color: white;
 }
-.footer-links{
-    list-style-type: none;
+.footer-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;    
+    padding: 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap : 0.2rem;
+  font-size: x-large;
+  font-weight: bold;
 }
 .footer a {
-  color: #f8fafc;
+    color: #3DADFF;
+    text-decoration: none;
 }
-.footer a:hover {
-  color: #3DADFF; 
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
-.copy{
-  color: #f8fafc;
+.intro p {
+  color: #94a3b8;
+  font-size: large;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.social-icons a {
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+  font-size: x-large;
+}
+
+.social-icons a:hover {
+  color: #e2e8f0;
+}
+
+.footer-heading {
+  color: #64748b;
+  font-size: x-large;
+  margin: 0 0 0.75rem;
+  letter-spacing: 0.03em;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.navigation ul li a,
+.get-in-touch a {
+  color: #cbd5e1;
+  font-size: large;
+  transition: color 0.2s;
+}
+
+.navigation ul li a:hover {
+  color: #e2e8f0;
+}
+
+.get-in-touch {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.get-in-touch a {
+  color: #3DADFF;
+  font-size: large;
+}
+
+.get-in-touch a:hover {
+  text-decoration: underline;
+}
+
+.copy {
+  border-top: 1px solid #1e293b;
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy p {
+  color: #475569;
+  font-size: medium;
+  margin: 0;
 }
 /* Footer end*/
