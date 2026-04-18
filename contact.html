@@ -1,13 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/9f3223db55.js" crossorigin="anonymous" defer></script>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="main.css" />
+    <meta name="description" content="Contact information and email form"/>
     <title>Olli Luhtanen Portfolio - Contact</title>
 </head>
 <body>
-    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Olli Luhtanen</div>
+            <div class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contact">
+        <div class="contact-info">
+            <h2 style="color: white;">Reach out on my socials</h2>
+            <p>You can reach me on</p>
+            <ul>
+                <li><i class="fa-brands fa-linkedin" style="font-size: 2rem;"></i><a href="https://linkedin.com/in/olliluhtanen" target="_blank">LinkedIn</a></li>
+                <li><i class="fa-brands fa-github" style="font-size: 2rem;"></i><a href="https://github.com/olliluhtanen" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+        <div class="contact-form">
+            <h2 style="color: white;">Or send me an email</h2>
+            <form action="" method="">
+                <input type="text" name="name" placeholder="Your Name" required><br>
+                <input type="email" name="_replyto" placeholder="Your Email" required><br>
+                <textarea name="message" placeholder="Your Message" required style="height: 5rem;"></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="intro">
+                <a href="index.html" class ="footer-brand">
+                    Olli Luhtanen
+                </a>
+                <p>Software Engineer & Game Developer</p>
+
+                <div class ="social-icons">
+                    <a href="https://linkedin.com/in/olliluhtanen" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/olliluhtanen" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="navigation">
+                <p class="footer-heading">Navigation</p>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="get-in-touch">
+                <p class="footer-heading">Get in touch</p>
+                <a href="https://linkedin.com/in/olliluhtanen" target="_blank">LinkedIn</a>
+                <a href="https://github.com/olliluhtanen" target="_blank">GitHub</a>
+            </div>
+
+        </div>
+
+        <div class="copy">
+            <p>
+                &copy; <script>document.write(new Date().getFullYear())</script> 
+                Olli Luhtanen. All rights reserved.
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
