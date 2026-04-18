@@ -3,15 +3,8 @@
 }
 body {
   margin: 0;
-
-}
-.section-header {
-  color: #0f172a;
-  font-size: xxx-large;
-  margin: 1.5rem;
-  text-align: center;
-  background-color: rgba(15, 23, 42, 0.2);
-  padding: 1rem;
+  background-color: rgb(5, 5, 8);
+  color: white;
 }
 
 /* Navbar start*/
@@ -26,12 +19,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: larger;
     padding: 1rem;
 }
 .logo{
     color: #f6f6f6;
-    font-size: xx-large;
+    font-size: x-large;
     padding-left: 1rem;
 }
 .nav-links{
@@ -45,11 +37,12 @@ body {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  font-size:xx-large;
+  font-size:x-large;
   text-decoration: none;
+  transition-duration: 0.2s;
 }
 .navbar a:hover {
-  color: #3DADFF; 
+  color: #3DADFF;
 }
 /* Navbar end*/
 
@@ -61,16 +54,32 @@ body {
 }
 .hero-container{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: larger;
   padding: 1.5rem;
+  gap: 1.5rem;
+  background-color: #181818;
+  color: white;
+  border-radius: 0 0 50px 50px;
+}
+.hero-container h2{
+  font-weight: 400;
+}
+.hero-content{
+  font-size: larger;
 }
 .hero-content{
   padding: 1.5rem;
-  font-size: larger;
+}
+.hero-image img{
+  padding: 1.5rem;
 }
 /* Hero end*/
+
+.section-header {
+  font-size: xxx-large;
+  margin: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+}
 
 /* Highlight start*/
 .highlight{
@@ -98,17 +107,11 @@ body {
 .project-card img{
   width: 90%;
   height: auto;
-  border-radius: 6px;
+  border-radius: 6px;  
 }
-.project-card button{
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: x-large;
-}
-.project-card button:hover{
-  background-color: #3DADFF;
+.project-card:hover {
+  background-color: #3daeff6e;
+  transition-duration: 0.4s;
 }
 /* Highlight end*/
 
@@ -117,6 +120,7 @@ body {
     background-color: #0f172a;
     color: white;
 }
+
 .footer-container {
     display: flex;
     align-items: flex-start;
@@ -125,22 +129,26 @@ body {
     gap: 2rem;
     flex-wrap: wrap;
 }
+
 .footer-brand {
   display: flex;
   align-items: center;
   gap : 0.2rem;
   font-size: x-large;
-  font-weight: bold;
+  font-weight: 300;
 }
+
 .footer a {
     color: #3DADFF;
     text-decoration: none;
 }
+
 .intro {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
+
 .intro p {
   color: #94a3b8;
   font-size: large;
@@ -182,8 +190,7 @@ body {
   gap: 0.5rem;
 }
 
-.navigation ul li a,
-.get-in-touch a {
+.navigation ul li a{
   color: #cbd5e1;
   font-size: large;
   transition: color 0.2s;
@@ -223,18 +230,23 @@ body {
 }
 /* Footer end*/
 
+/* Contact start */
 .contact{
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 6rem  auto;
   padding: 2rem;
-  background-color: #0f172a;
-  color: white;
+  color: black;
   font-size: xx-large;
+  background-color: #181818;
+  color: white;
+  border-radius: 20px;
+
 }
 .contact div {
   padding: 1rem;
 }
+
 .contact-form input, .contact-form textarea{
   width: 100%;
   max-width: 500px;
@@ -257,9 +269,13 @@ body {
 .contact a {
   color: #3DADFF;
   text-decoration: none;
-  font-size: xx-large;
+  font-size: x-large;
   padding: 1rem;
 }
+.contact a:hover {
+  text-decoration: underline;
+}
+/* Contact end */
 
 .todo {
   font-size: xx-large;
