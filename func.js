@@ -27,7 +27,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
-//github stats
+//Github repos
 const GithubUser = "Olli-luhtanen";
 
 const shownprojects = [
