@@ -1,3 +1,4 @@
+/* Base for the site */
 * {
   box-sizing: border-box;
 }
@@ -5,6 +6,7 @@ body {
   margin: 0;
   background-color: rgb(5, 5, 8);
   color: white;
+  overflow-x: hidden;
 }
 
 /* Navbar start*/
@@ -69,7 +71,7 @@ body {
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* Mobile */
+/* Mobile and Scaling*/
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -96,17 +98,34 @@ body {
     padding: 0.75rem 0;
     border-bottom: 1px solid rgba(0,0,0,0.08);
   }
-}
-
-/* Responsiveness */
-@media (max-width: 768px) {
+  section .section-header{
+    font-size: xx-large;
+    margin: 1rem 0;
+    padding: 0.5rem;
+  }
   .projects-grid {
     grid-template-columns: 1fr;
   }
+  .hero-container {
+    flex-direction: column;   
+    align-items: center;
+    text-align: center;
+    border-radius: 0 0 30px 30px;
+  }
 
-  section { padding: 3rem 1.25rem; }
-  h1 { font-size: clamp(1.8rem, 6vw, 3rem); }
-  h2 { font-size: clamp(1.3rem, 4vw, 2rem); }
+  .hero-image img {
+    max-width: 260px;         
+    padding: 0;
+  }
+
+  section, header, footer{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  h1 { font-size: clamp(1.8rem, 5vw, 3.5rem); }
+  h2 { font-size: clamp(1.4rem, 4vw, 2.5rem); }
+  h3 { font-size: clamp(1.1rem, 3vw, 1.5rem); }
+  p  { font-size: clamp(0.95rem, 2.5vw, 1.1rem); }
 }
 
 /* Hero start*/
@@ -122,17 +141,25 @@ body {
   background-color: #181818;
   color: white;
   border-radius: 0 0 50px 50px;
+  align-items: center;
 }
 .hero-container h2{
   font-weight: 400;
 }
 .hero-content{
   font-size: larger;
-}
-.hero-content{
+  flex: 1;
   padding: 1.5rem;
 }
+.hero-image{
+  flex-shrink: 0;
+}
 .hero-image img{
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 12px;
   padding: 1.5rem;
 }
 /* Hero end*/
@@ -294,30 +321,33 @@ body {
 /* Footer end*/
 
 /* Contact start */
-.contact{
+.contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 6rem  auto;
+  width: calc(100% - 4rem);   /* full width minus breathing room */
+  max-width: 900px;
+  margin: 4rem auto;
   padding: 2rem;
-  color: black;
-  font-size: xx-large;
+  font-size: large;            /* was xx-large, causing overflow */
   background-color: #181818;
   color: white;
   border-radius: 20px;
-
 }
+
 .contact div {
   padding: 1rem;
 }
 
-.contact-form input, .contact-form textarea{
+.contact-form input, .contact-form textarea {
   width: 100%;
-  max-width: 500px;
+  max-width: 100%;             /* was 500px, overflowed on mobile */
   padding: 0.5rem;
   margin-bottom: 1rem;
   border: none;
   border-radius: 4px;
+  box-sizing: border-box;
 }
+
 .contact-form button {
   border: none;
   padding: 0.5rem 1rem;
@@ -325,24 +355,37 @@ body {
   cursor: pointer;
   font-size: large;
 }
+
 .contact ul {
   padding: 0;
   list-style: none;
 }
+
+.contact ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .contact a {
   color: #3DADFF;
   text-decoration: none;
-  font-size: x-large;
-  padding: 1rem;
+  font-size: large;            /* was x-large with 1rem padding, too wide */
+  padding: 0;
 }
+
 .contact a:hover {
   text-decoration: underline;
 }
-/* Contact end */
 
-.todo {
-  font-size: xx-large;
-  overflow: hidden;
-  text-align: center;
-  padding: 10rem;
+@media (max-width: 768px) {
+  .contact {
+    grid-template-columns: 1fr;
+    width: calc(100% - 2.5rem);
+    margin: 2rem auto;
+    padding: 1.25rem;
+    font-size: medium;
+  }
 }
+/* Contact end */
