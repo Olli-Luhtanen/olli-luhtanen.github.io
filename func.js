@@ -33,6 +33,7 @@ const GithubUser = "Olli-luhtanen";
 const shownprojects = [
   "Object_oriented_project",
   "rpg_prototype",
+  "olli-luhtanen.github.io"
 ];
 
 async function fetchGithubRepos() {
@@ -67,3 +68,4 @@ async function fetchGithubRepos() {
     console.error(err);
   }
 }
+fetchGithubRepos();
