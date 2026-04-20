@@ -20,6 +20,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
+  transition: 0.3s ease;
 }
 .logo{
     color: #f6f6f6;
@@ -44,6 +45,11 @@ body {
 }
 .navbar a:hover {
   color: #3DADFF;
+}
+.navbar.scrolled {
+  margin-left: 8rem;
+  margin-right: 8rem;
+  border-radius: 20px;
 }
 
 /* Hamburger */
@@ -141,6 +147,66 @@ body {
 .project-card:hover {
   background-color: #3daeff6e;
   transition-duration: 0.4s;
+}
+
+/* GitHub section */
+.github {
+  width: 100%;
+  padding: 2rem 1.5rem;
+}
+
+.github-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.github-card {
+  background-color: #0f172a;
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.github-card:hover {
+  background-color: #3daeff6e;
+}
+
+.github-card h3 {
+  margin: 0;
+  font-size: large;
+  color: #3DADFF;
+}
+
+.github-card p {
+  margin: 0;
+  font-size: medium;
+  color: #94a3b8;
+  flex: 1;
+}
+
+.github-card-footer {
+  display: flex;
+  gap: 1rem;
+  font-size: small;
+  color: #64748b;
+  margin-top: 0.5rem;
+}
+
+.github-loading {
+  color: #64748b;
+  padding: 1.5rem;
+}
+
+.github-error {
+  color: #f87171;
+  padding: 1.5rem;
 }
 
 /* Contact */
@@ -365,6 +431,11 @@ body {
   .hero-image img {
     max-width: 260px;         
     padding: 0;
+  }
+  
+  .github-grid {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
   }
 
   .contact {
