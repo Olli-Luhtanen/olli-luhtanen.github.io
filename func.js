@@ -28,28 +28,20 @@ window.addEventListener('scroll', () => {
 });
 
 //Github repos
-const GithubUser = "Olli-luhtanen";
-
-const shownprojects = [
-  "Object_oriented_project",
-  "rpg_prototype",
-  "olli-luhtanen.github.io"
-];
+const GithubUser = "Olli-Luhtanen";
 
 async function fetchGithubRepos() {
   const grid = document.getElementById('github-grid');
   if (!grid) return;
 
   try {
-    const requests = shownprojects.map(repo =>
-      fetch(`https://api.github.com/repos/${GithubUser}/${repo}`)
-        .then(res => {
-          if (!res.ok) throw new Error(`Repo not found: ${repo}`);
-          return res.json();
-        })
-    );
+    const response = await fetch(`https://api.github.com/users/${GithubUser}/repos?per_page=100`);
+    if (!response.ok) throw new Error('Failed to fetch repositories');
 
-    const repos = await Promise.all(requests);
+    let repos = await response.json();
+
+    // Sort by last updated, most recent first
+    repos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
 
     grid.innerHTML = repos.map(repo => `
       <a class="github-card" href="${repo.html_url}" target="_blank">

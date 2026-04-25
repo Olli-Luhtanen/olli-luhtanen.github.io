@@ -1,2 +1,2 @@
 # olli-luhtanen.github.io
-Personal portfolio website to showcase my Game- and Software projects.
+Personal portfolio website to showcase all my projects.
